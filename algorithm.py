@@ -5,7 +5,6 @@ import numpy as np
 import string
 import nltk
 from nltk.corpus import stopwords
-
 from re import sub
 from gensim.utils import simple_preprocess
 import gensim.downloader as api
@@ -109,7 +108,7 @@ def get_similar_documents_list(current_document):
   # Output the sorted similarity scores and documents
   sorted_indexes = np.argsort(doc_similarity_scores)[::-1]
   the_similar_documents = []
-  for idx in sorted_indexes[:10]:
+  for idx in sorted_indexes[:4]: #AMMOUNT TO RESPOND#
       # the_similar_documents.append([documents_titles[idx], documnets_topics[idx][:-1], not_preprocessed_documents[idx]])
       the_similar_documents.append([documents_titles[idx], documnets_topics[idx][:-1]])
 
@@ -117,10 +116,10 @@ def get_similar_documents_list(current_document):
 
 ### THE CODE ###
 
-education_file = "courses_text_files/education_Current topics in business didactics.txt"
-marketing_file = "courses_text_files/marketing_Action Learning In Retail Marketing.txt"
+education_file = "courses_text_files/education/Current topics in business didactics.txt"
+marketing_file = "courses_text_files/marketing/Action Learning In Retail Marketing.txt"
 
-current_file = open(marketing_file, "r", encoding="utf-8")
+current_file = open(marketing_file, "r", encoding="utf-8") #PREVIOUS COURSE TO COMPARE TO#
 current_document = current_file.read()
 result_list = get_similar_documents_list(current_document)
 print(result_list)
