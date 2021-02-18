@@ -7,3 +7,5 @@ Required Modules
 - glob
 - string
 - nltk
+- re
+- gensim
