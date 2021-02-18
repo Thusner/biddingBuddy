@@ -10,6 +10,8 @@ app.config['BOOTSTRAP_SERVE_LOCAL'] = True
 def main():
     return render_template("index.html")
 
+
+@app.route('/result',methods = ['GET','POST'])
 def contactFunction():
 
     if request.method == "POST":
@@ -21,7 +23,7 @@ def contactFunction():
         return render_template("resultPage.html", results = aiResults)
 
 
-    return render_template("contact.html")
+    return render_template("result.html")
 
 
 def aiFunction():
