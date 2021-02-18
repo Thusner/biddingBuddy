@@ -1,13 +1,15 @@
+from flask_bootstrap import Bootstrap
 from flask import Flask, render_template,request
 
 app = Flask(__name__)
+Bootstrap(app)
+app.config['BOOTSTRAP_SERVE_LOCAL'] = True
 
-
-@app.route('/')
+@app.route('/',methods = ["GET","POST"])
 def main():
     return render_template("index.html")
 
-@app.route('/contact', methods = ["GET","POST"])
+@app.route('/results', methods = ["GET","POST"])
 def contactFunction():
 
     if request.method == "POST":
