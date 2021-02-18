@@ -1,0 +1,1 @@
+Examines information security challenges and solutions, which information management professionals contend with when providing technology services and applications based on premises and cloud platforms. Students will solidify the terminology and security architecture via hands on labs using open source and cloud based tools. Covers security topics based relevant attack vectors.

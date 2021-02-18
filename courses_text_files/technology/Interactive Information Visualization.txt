@@ -1,0 +1,1 @@
+Introduces techniques for visualizing, analyzing, and supporting interaction with structured data )numbers, text, graphs). Provides experience creating interactive visualizations for the web. Exposes students to cognitive science, statistics, and perceptual psychology principles. Students design and evaluate visualizations using perceptual and statistical accuracy.

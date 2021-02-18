@@ -1,0 +1,1 @@
+Introduces the concepts and methods used to analyze, store, manage, and present information and navigation. Equal weight given to understanding structures and implementing them. Topics include information analysis and organizational methods as well as XML and metadata concepts and application.

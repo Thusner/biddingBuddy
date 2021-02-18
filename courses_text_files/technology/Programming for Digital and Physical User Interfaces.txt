@@ -1,0 +1,1 @@
+Students will enhance their fundamental programming skills, with a focus on sensor-based signals and data to demonstrate core concepts, while providing useful tools for prototyping digital and physical user interfaces. This course will introduce students to the practices of engineering interactive systems on mobile and desktop computers and low-cost micro-controllers.

@@ -1,0 +1,1 @@
+Teaches students how to build custom websites/applications from scratch, manage files in a version control system, and deploy them to publicly-accessible web servers. Focus is on client-side technologies, including HTML, CSS, and JavaScript. Existing basic programming knowledge is beneficial but not required.

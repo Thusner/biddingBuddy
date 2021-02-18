@@ -1,0 +1,14 @@
+This should be done in two steps.
+The first step is to show the relevance of market-oriented product design and to explain the general process of this approach. The focus is on processes of preference construction and, based on this, methods for market analysis and strategy development. Furthermore, methods are of interest to define product properties concretely and to evaluate their effect on potential consumers. In addition, it is about the concept of customer satisfaction and its effect on downstream economic variables.
+The second part deals with some of the more recent phenomena in the field of product design, which are based on current technological and scientific developments. This includes in particular the new possibilities of product design through information processing systems and the Internet as an interface to the customer ("mass customization") as well as the optimization of the diversity of a manufacturer's offer. The last point of interest is the application of aesthetic principles as they have emerged from behavioral studies to the concrete design of products.
+Event structure
+part One
+1. Relevance of market-oriented product design 2. Basics of preference construction
+3. Development of market-oriented product strategies
+4. Selection or definition of product properties and characteristics
+ 5. Testing of product ideas and designs
+Part II
+6. Variant management
+7. Customer integration
+8. Mass Customization
+9. Product aesthetics & concrete design 

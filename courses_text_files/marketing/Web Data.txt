@@ -1,0 +1,67 @@
+With the proliferation of mobile devices and the growth of user‐generated content, we see an unprecedented growth of individuals producing content themselves and interacting, sharing, and consuming this content through social media and other channels. A key challenge in research and business practice is to make informed decisions based on the properties of those exchanges for applications such as new product introductions, crime prevention, or even campaigning (such as in politics).
+This course is designed to introduce students to the concepts and statistical methods to collect, visualize, and analyze data streams that cover such relational properties. This course puts an emphasis on data types that are typically found in social media applications and how to analyze the relational properties of such data. This course focuses on the query, visualization, and analysis of textual, voice and relational network data (social network analysis and text mining).
+We will first cover the basics of R, an open‐source statistical software. Second, we will cover ways to crawl, analyze, and make inferences using textual data (such as accessing and analyzing data via Twitter and other applications). Third, we will cover ways to analyze network and audio data, detecting communities from networks and extracting information from voice data.
+Learning objectives
+Learning Objectives
+After taking this course you should:
+1. Be able to use statistical software programs to query and visualize textual, voice and network data.
+2. Be able to summarize and assess the sentiments of textual data, extract and identify the main topics of textual data and to
+analyze the characteristics of networks using graph theoretic metrics. 3. Be able to extract and visualize the main features of audio data.
+Course content
+Course Schedule
+   Fact sheet version: 1.0 as of 13/01/2021, valid for Spring Semester 2021 Page 1 / 8
+ Schedule below is tentative and can be modified.
+   Event
+    Date
+  Details
+    Additional Readings
+  Session 1
+    Introduction and R Basics 1
+New Challenges for Mining Social Web Data
+Notes on Readings, Term Project, and Grading
+Data Structures
+Reading and Writing Functions Installing and Loading Packages Functions
+For, while loops and If Statements
+          (Matloff, 2011)
+  Session 2
+        R Basics 2
+Data Visualization: ggplot2
+Filtering, joining and summarizing data: dplyr
+Tidyverse
+        (Grolemund & Wickham, 2018)
+  Session 3
+    Introduction to Text Mining
+Text Mining Basic Workflow Pre‐processing
+Representations: Bag of Words, Term Frequency, TFIDF
+Basic Text Visualizations: Word Clouds, Word Associations and Word Networks
+       (Kwartler, 1991, Chapters 1, 2 & 3; Provost & Fawcett, 2013, Chapter 10)
+   Session 4
+        Web Scraping
+Understanding Web Structure HTML Objects
+APIs (Facebook and Twitter) JSON Objects
+         (Marble, 2016)
+  Session 5
+        Sentiment & Polarity Analysis
+Semantic Orientation Feature Extraction
+       (Dahal, Kumar, & Li, 2019; Mejova, 2009)
+  Session 6
+     Mid‐term Exam & Topic Modeling
+Latent Dirichlet allocation Classification
+Feature extraction
+       (Dahal et al., 2019; Mejova, 2009)
+           Fact sheet version: 1.0 as of 13/01/2021, valid for Spring Semester 2021
+ Semester BreakSession 7Lab Session ‐ Modeling Twitter Data
+Data Acquisition Text Processing
+Data Visualization Sentiment & Polarity
+    Session 8Network Analysis
+Graph Theoretical Representation of Data Types of Graphs & Connectivity
+Basic Properties and Network Measures PageRank Algorithm
+Community Detection
+Community Evolution and Evaluation
+      (Ng & Soo, 2017, Chapter 5; Zafarani, Abbasi, & Liu, 2014, Chapters 2, 3 & 4)Session 9Audio Analytics
+Basics of sound: amplitude, fundamental frequency, pitch, loudness
+Feature Extraction: VoiceR
+  (Hildebrand et al., 2020)Session 10Audio Analytics Lab
+Preprocessing audio
+Extracting features from audio Analyzing voice Files using the VoiceR package
+   Session 11Team Presentations
