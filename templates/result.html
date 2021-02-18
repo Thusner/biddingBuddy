@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+      <title>Bidding Buddy</title>
+      <link href="{{ url_for('static', filename='assets/img/biddingBuddy.png') }}" rel="shortcut icon" >
+      <link href="{{ url_for('static', filename='assets/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+      <link href="{{ url_for('static', filename='assets/fonts/font-awesome.min.css') }}" rel="stylesheet">
+      <link href="{{ url_for('static', filename='assets/fonts/ionicons.min.css') }}" rel="stylesheet">
+      <link href="{{ url_for('static', filename='assets/css/Footer-Basic.css') }}" rel="stylesheet">
+      <link href="{{ url_for('static', filename='assets/css/Navigation-Clean.css') }}" rel="stylesheet">
+      <link href="{{ url_for('static', filename='assets/css/Navigation-with-Search.css') }}" rel="stylesheet">
+      <link href="{{ url_for('static', filename='assets/css/styles.css') }}" rel="stylesheet">
+  </head>
+  <body>
+      <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="background: var(--green);color: var(--white);">
+          <div class="container"><img src="assets/img/biddingBuddy.png" style="height: 40px;"><a class="navbar-brand" href="#" style="margin-left: 20px;">Bidding Buddy</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse" id="navcol-1">
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item"><a class="nav-link" href="#" style="color: var(--white);">Login</a></li>
+                      <li class="nav-item dropdown show"><a class="dropdown-toggle nav-link" aria-expanded="true" data-toggle="dropdown" href="#lang" style="color: var(--white);">Language</a>
+                          <div class="dropdown-menu show"><a class="dropdown-item" href="#en">English</a><a class="dropdown-item" href="#de">German</a></div>
+                      </li>
+                      <input type="search" id="search-field" class="search-field" name="search">
+                      <li class="nav-item"><a class="nav-link" href="#" style="color: var(--white);">Search</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+      <div class="container" style="max-width: 1000px;">
+          <ul class="nav nav-tabs">
+              <li class="nav-item"><a class="nav-link active" href="#">Recommendations</a></li>
+              <li class="nav-item"><a class="nav-link" href="#calendar" style="color: var(--green);">Calendar</a></li>
+              <li class="nav-item"><a class="nav-link" href="#uniboard" style="color: var(--green);">uniboard.ch</a></li>
+              <li class="nav-item"><a class="nav-link" href="#event" style="color: var(--green);">Events</a></li>
+              <li class="nav-item"><a class="nav-link" href="#share" style="color: var(--green);">Share</a></li>
+          </ul>
+          <h1 style="text-align: center;"><br>Here Are Your Top 5 Courses<br><br></h1>
+      </div>
+      <div class="container" style="max-width: 800px;">
+          <p class="d-xl-flex justify-content-xl-center">Based off the previous courses you selected and the topics you enjoyed, we believe that these 5 courses best match your preferences.<br></p>
+      </div>
+      <footer class="footer-basic">
+          <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+          <ul class="list-inline">
+              <li class="list-inline-item"><a href="#">Home</a></li>
+              <li class="list-inline-item"><a href="#">Services</a></li>
+              <li class="list-inline-item"><a href="#">About</a></li>
+              <li class="list-inline-item"><a href="#">Terms</a></li>
+              <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+          </ul>
+          <p class="copyright">Bidding Buddy © 2021</p>
+      </footer>
+      <script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+      <script src="{{ url_for('static', filename='assets/bootstrap/js/bootstrap.min.js') }}"></script>
+  </body>
+</html>
