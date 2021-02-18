@@ -78,13 +78,9 @@ def get_all_documents_from_files():
       documents.append(contnet)
   return documents, documents_titles, documnets_topics
 
-def get_similar_documents_list(current_document):
+def get_similar_documents_list(current_document, not_preprocessed_documents, documents_titles, documnets_topics, all_documents):
   ### GET AND PREPROCESS DATA ###
   current_document = preprocesData(current_document)
-  not_preprocessed_documents, documents_titles, documnets_topics = get_all_documents_from_files()
-  all_documents = []
-  for doc in not_preprocessed_documents:
-    all_documents.append(preprocesData(doc))
 
   ### REMOVE FROM ALL DOCUMENTS THE CURRENT DOCUMENT ###
   for doc in all_documents:
@@ -108,18 +104,8 @@ def get_similar_documents_list(current_document):
   # Output the sorted similarity scores and documents
   sorted_indexes = np.argsort(doc_similarity_scores)[::-1]
   the_similar_documents = []
-  for idx in sorted_indexes[:4]: #AMMOUNT TO RESPOND#
+  for idx in sorted_indexes[:5]: #AMMOUNT TO RESPOND#
       # the_similar_documents.append([documents_titles[idx], documnets_topics[idx][:-1], not_preprocessed_documents[idx]])
-      the_similar_documents.append([documents_titles[idx], documnets_topics[idx][:-1]])
+      the_similar_documents.append([documents_titles[idx], documnets_topics[idx][:-1], not_preprocessed_documents[idx], doc_similarity_scores[idx]])
 
   return the_similar_documents
-
-### THE CODE ###
-
-education_file = "courses_text_files/education/Current topics in business didactics.txt"
-marketing_file = "courses_text_files/marketing/Action Learning In Retail Marketing.txt"
-
-current_file = open(marketing_file, "r", encoding="utf-8") #PREVIOUS COURSE TO COMPARE TO#
-current_document = current_file.read()
-result_list = get_similar_documents_list(current_document)
-print(result_list)

@@ -15,7 +15,7 @@
   </head>
   <body>
       <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="background: var(--green);color: var(--white);">
-          <div class="container"><img src="assets/img/biddingBuddy.png" style="height: 40px;"><a class="navbar-brand" href="#" style="margin-left: 20px;">Bidding Buddy</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+          <div class="container"><img src="{{ url_for('static', filename='assets/img/biddingBuddy.png') }}" style="height: 40px;"><a class="navbar-brand" href="#" style="margin-left: 20px;">Bidding Buddy</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
               <div class="collapse navbar-collapse" id="navcol-1">
                   <ul class="navbar-nav ml-auto">
                       <li class="nav-item"><a class="nav-link" href="#" style="color: var(--white);">Login</a></li>
@@ -37,6 +37,22 @@
               <li class="nav-item"><a class="nav-link" href="#share" style="color: var(--green);">Share</a></li>
           </ul>
           <h1 style="text-align: center;"><br>Here Are Your Top 5 Courses<br><br></h1>
+          <div class="row row-cols-1 row-cols-md-2 g-4" style="row-gap: 2em; margin-bottom: 2em">
+            {% for res in results %}
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Title: {{res[0]|e}}</h5>
+                  <h1 class="card-text">Score: {{res[3]|e}}</h6>
+                  <h6 class="card-text">Topic: {{res[1]|e}}</h6>
+                  <p class="card-text">{{res[2]|e}}</p>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+          <a class="btn btn-primary" style="margin-bottom:2vh" href="/">Back</a>
+        </div>
       </div>
       <div class="container" style="max-width: 800px;">
           <p class="d-xl-flex justify-content-xl-center">Based off the previous courses you selected and the topics you enjoyed, we believe that these 5 courses best match your preferences.<br></p>

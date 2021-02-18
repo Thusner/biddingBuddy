@@ -15,7 +15,7 @@
   </head>
   <body>
       <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="background: var(--green);color: var(--white);">
-          <div class="container"><img src="assets/img/biddingBuddy.png" style="height: 40px;"><a class="navbar-brand" href="#" style="margin-left: 20px;">Bidding Buddy</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+          <div class="container"><img src="{{ url_for('static', filename='assets/img/biddingBuddy.png') }}" style="height: 40px;"><a class="navbar-brand" href="#" style="margin-left: 20px;">Bidding Buddy</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
               <div class="collapse navbar-collapse" id="navcol-1">
                   <ul class="navbar-nav ml-auto">
                       <li class="nav-item"><a class="nav-link" href="#" style="color: var(--white);">Login</a></li>
@@ -38,7 +38,8 @@
           </ul>
           <h1 style="text-align: center;"><br>Find the Courses that Best Match your Interests<br><br></h1>
       </div>
-      <div class="container" style="max-width: 800px;">
+
+      <form action="http://localhost:5000/contactFunction " method="POST" enctype="multipart/form-data" class="container" style="max-width: 800px;">
           <p class="d-xl-flex justify-content-xl-center">Are you struggling to find the courses that match your interests in the long list of course options? Would you like to know beforehand if the course you are about to take is the right one for you? With our tool you can get recommendations exactly tailored to your preferences. Just fill out a quick survey of your preferences and get recommendations based on your results and ratings of the experiences of past students.<br></p>
           <h2 style="font-size: 28px;">Please Choose 3 Topics That Interest You</h2>
           <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Marketing</label></div>
@@ -50,15 +51,15 @@
           <h2 style="font-size: 28px;">Course Content</h2>
           <div class="input-group mb-3">
               <span class="input-group-text" id="basic-addon1">Title</span>
-              <input type="text" class="form-control" placeholder="Course title" aria-label="Username" aria-describedby="basic-addon1">
+              <input name="course_name" id="course_name" type="text" class="form-control" placeholder="Course title" aria-label="Username" aria-describedby="basic-addon1">
             </div>
           <div class="input-group">
               <span class="input-group-text">Content</span>
-              <textarea class="form-control" aria-label="With textarea"></textarea>
+              <textarea name="course_description" id="course_description" class="form-control" aria-label="With textarea"></textarea>
             </div>
             <br/>
-          <button class="btn btn-primary" type="button" style="background: var(--green);">Submit</button>
-      </div>
+          <button class="btn btn-primary" type="submit" style="background: var(--green);">Submit</button>
+        </form>
       <footer class="footer-basic">
           <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
           <ul class="list-inline">
