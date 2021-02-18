@@ -15,12 +15,12 @@
   </head>
   <body>
       <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="background: var(--green);color: var(--white);">
-          <div class="container"><img src="{{ url_for('static', filename='assets/img/biddingBuddy.png') }}" style="height: 40px;"><a class="navbar-brand" href="#" style="margin-left: 20px;">Bidding Buddy</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+          <div class="container"><img src="{{ url_for('static', filename='assets/img/biddingBuddy.png') }}" style="height: 40px;"><a class="navbar-brand" href="/" style="margin-left: 20px;">Bidding Buddy</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
               <div class="collapse navbar-collapse" id="navcol-1">
                   <ul class="navbar-nav ml-auto">
                       <li class="nav-item"><a class="nav-link" href="#" style="color: var(--white);">Login</a></li>
-                      <li class="nav-item dropdown show"><a class="dropdown-toggle nav-link" aria-expanded="true" data-toggle="dropdown" href="#lang" style="color: var(--white);">Language</a>
-                          <div class="dropdown-menu show"><a class="dropdown-item" href="#en">English</a><a class="dropdown-item" href="#de">German</a></div>
+                      <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="true" data-toggle="dropdown" href="#lang" style="color: var(--white);">Language</a>
+                          <div class="dropdown-menu"><a class="dropdown-item" href="#en">English</a><a class="dropdown-item" href="#de">German</a></div>
                       </li>
                       <input type="search" id="search-field" class="search-field" name="search">
                       <li class="nav-item"><a class="nav-link" href="#" style="color: var(--white);">Search</a></li>
@@ -36,7 +36,7 @@
               <li class="nav-item"><a class="nav-link" href="#event" style="color: var(--green);">Events</a></li>
               <li class="nav-item"><a class="nav-link" href="#share" style="color: var(--green);">Share</a></li>
           </ul>
-          <h1 style="text-align: center;"><br>Here Are Your Top 5 Courses<br><br></h1>
+          <h1 style="text-align: center;"><br>Here Are Your Top Courses<br><br></h1>
           <div class="row row-cols-1 row-cols-md-2 g-4" style="row-gap: 2em; margin-bottom: 2em">
             {% for res in results %}
             <div class="col">
@@ -51,11 +51,9 @@
             </div>
             {% endfor %}
           </div>
-          <a class="btn btn-primary" style="margin-bottom:2vh" href="/">Back</a>
+          <a class="btn btn-primary" style="background:var(--green); margin-bottom: 2em" href="/" >Back</a>
         </div>
-      </div>
-      <div class="container" style="max-width: 800px;">
-          <p class="d-xl-flex justify-content-xl-center">Based off the previous courses you selected and the topics you enjoyed, we believe that these 5 courses best match your preferences.<br></p>
+        <p class="d-xl-flex justify-content-xl-center">Based off the course information you have entered, we believe that you would enjoy these classes the most.<br></p>
       </div>
       <footer class="footer-basic">
           <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>

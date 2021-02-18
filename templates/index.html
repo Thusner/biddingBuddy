@@ -15,12 +15,12 @@
   </head>
   <body>
       <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="background: var(--green);color: var(--white);">
-          <div class="container"><img src="{{ url_for('static', filename='assets/img/biddingBuddy.png') }}" style="height: 40px;"><a class="navbar-brand" href="#" style="margin-left: 20px;">Bidding Buddy</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+          <div class="container"><img src="{{ url_for('static', filename='assets/img/biddingBuddy.png') }}" style="height: 40px;"><a class="navbar-brand" href="/" style="margin-left: 20px;">Bidding Buddy</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
               <div class="collapse navbar-collapse" id="navcol-1">
                   <ul class="navbar-nav ml-auto">
                       <li class="nav-item"><a class="nav-link" href="#" style="color: var(--white);">Login</a></li>
-                      <li class="nav-item dropdown show"><a class="dropdown-toggle nav-link" aria-expanded="true" data-toggle="dropdown" href="#lang" style="color: var(--white);">Language</a>
-                          <div class="dropdown-menu show"><a class="dropdown-item" href="#en">English</a><a class="dropdown-item" href="#de">German</a></div>
+                      <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="true" data-toggle="dropdown" href="#lang" style="color: var(--white);">Language</a>
+                          <div class="dropdown-menu"><a class="dropdown-item" href="#en">English</a><a class="dropdown-item" href="#de">German</a></div>
                       </li>
                       <input type="search" id="search-field" class="search-field" name="search">
                       <li class="nav-item"><a class="nav-link" href="#" style="color: var(--white);">Search</a></li>
@@ -41,13 +41,11 @@
 
       <form action="http://localhost:5000/contactFunction " method="POST" enctype="multipart/form-data" class="container" style="max-width: 800px;">
           <p class="d-xl-flex justify-content-xl-center">Are you struggling to find the courses that match your interests in the long list of course options? Would you like to know beforehand if the course you are about to take is the right one for you? With our tool you can get recommendations exactly tailored to your preferences. Just fill out a quick survey of your preferences and get recommendations based on your results and ratings of the experiences of past students.<br></p>
-          <h2 style="font-size: 28px;">Please Choose 3 Topics That Interest You</h2>
+          <h2 style="font-size: 28px;">Please Choose Topics That Interest You</h2>
           <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Marketing</label></div>
-          <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-5"><label class="form-check-label" for="formCheck-1">Technology</label></div>
-          <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-4"><label class="form-check-label" for="formCheck-1">History</label></div>
-          <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-3"><label class="form-check-label" for="formCheck-1">Education</label></div>
-          <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-1">Economics</label></div>
-          <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Coding</label></div>
+          <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2">Technology</label></div>
+          <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-3"><label class="form-check-label" for="formCheck-3">History</label></div>
+          <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-4"><label class="form-check-label" for="formCheck-4">Education</label></div>
           <h2 style="font-size: 28px;">Course Content</h2>
           <div class="input-group mb-3">
               <span class="input-group-text" id="basic-addon1">Title</span>

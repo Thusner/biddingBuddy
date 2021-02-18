@@ -68,7 +68,7 @@ def get_all_documents_from_files():
       path_length = len(folder_topic_path)
       document_title = txt_path[path_length:-4]
       FileContent = file.read()
-      list_topic.append(FileContent)
+      list_topic.append(FileContent[0:500] + "...")
       documents_titles.append(document_title)
       documnets_topics.append(topic)
     documents_topic.append(list_topic)
@@ -104,7 +104,7 @@ def get_similar_documents_list(current_document, not_preprocessed_documents, doc
   # Output the sorted similarity scores and documents
   sorted_indexes = np.argsort(doc_similarity_scores)[::-1]
   the_similar_documents = []
-  for idx in sorted_indexes[:5]: #AMMOUNT TO RESPOND#
+  for idx in sorted_indexes[:6]: #AMMOUNT TO SPIT OUT#
       # the_similar_documents.append([documents_titles[idx], documnets_topics[idx][:-1], not_preprocessed_documents[idx]])
       the_similar_documents.append([documents_titles[idx], documnets_topics[idx][:-1], not_preprocessed_documents[idx], doc_similarity_scores[idx]])
 
